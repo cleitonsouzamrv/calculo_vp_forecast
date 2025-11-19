@@ -155,10 +155,10 @@ def format_unidades(v):
 
 def render():
 
-    st.header("📊 Indicadores VP & UP — Forecast")
+    st.header("📊 Cálculo de VP & UP — Forecast")
 
     up = st.file_uploader(
-        "Carregue o arquivo Forecast (.xlsx, .xls, .xlsb)",
+        "Carregue o arquivo do Forecast (.xlsx, .xls, .xlsb)",
         type=["xlsx", "xls", "xlsb"]
     )
     if up is None:
