@@ -1,10 +1,10 @@
+# vp_up.py
 import streamlit as st
 import pandas as pd
 import numpy as np
 import unicodedata
 import re
 from datetime import datetime, date
-
 
 # -------------------------------------------------------
 # FUNÇÕES UTILITÁRIAS
@@ -229,3 +229,11 @@ def render():
 
     except Exception as e:
         st.error(f"Erro ao processar o arquivo: {e}")
+
+
+# -------------------------------------------------------
+# EXECUÇÃO DIRETA (necessário no Streamlit Cloud)
+# -------------------------------------------------------
+if __name__ == "__main__":
+    st.set_page_config(page_title="VP Forecast", layout="wide")
+    render()
