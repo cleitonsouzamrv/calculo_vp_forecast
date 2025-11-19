@@ -1,0 +1,6 @@
+streamlit==1.32.0
+pandas==2.1.4
+numpy==1.26.4
+pyxlsb==1.0.10
+openpyxl==3.1.2
+unidecode==1.3.8
